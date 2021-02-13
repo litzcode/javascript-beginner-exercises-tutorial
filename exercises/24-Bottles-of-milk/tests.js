@@ -17,7 +17,7 @@ describe('All the javascript should match', function () {
 
         const file = require("./app.js");
 
-        expect(console.log.mock.calls.length).toBe(99);
+        expect(console.log.mock.calls.length).toBe(100); //original is 99 times, but it should be 100
     });
     
     it('console.log() function should be called with proper lyrics', function () {

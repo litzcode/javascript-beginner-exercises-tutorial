@@ -16,7 +16,7 @@ global.console.log = console.log = jest.fn((text) => _buffer += text + "\n");
     const  fireGun = app.__get__("fireGun"); 
     const  bulletPosition = app.__get__("bulletPosition"); 
     
-        it('If fireGun() is false, message should be "Keep playing :)"', function () {
+        it('If fireGun() is false, message should be "Keep playing!"', function () {
             for(var i = 1; i <= 6; i++){
                 if(i === bulletPosition){
                     expect(fireGun(i)).toContain("You're dead!");

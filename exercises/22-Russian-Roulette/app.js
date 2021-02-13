@@ -5,10 +5,16 @@ const spinChamber = () => {
 	return chamberPosition;
 };
 
+bulletPosition=spinChamber();
 // Remove the // below and complete the commented lines
 const fireGun = (spinnerPosition) => {
     //if (...) return ("You're dead!");
     //else return ("Keep playing!");
+    if (bulletPosition==spinnerPosition){
+        return "You're dead!";
+    } else {
+        return "Keep playing!";
+    }
 };
-
-//console.log(fireGun(...));
+console.log(bulletPosition);
+console.log(fireGun(5));
